@@ -1,5 +1,7 @@
 options:
   logging: CLOUD_LOGGING_ONLY
+  # Optionally specify a supported region for build execution
+  workerPool: projects/temperatureconverter-sit707/locations/us-central1/workerPools/default
 
 steps:
   - name: maven:3.8.4-jdk-11
