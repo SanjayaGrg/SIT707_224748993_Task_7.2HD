@@ -6,6 +6,6 @@ steps:
     
   # Deploy to Cloud Run
   - name: "gcr.io/cloud-builders/gcloud"
-    args: ["run", "deploy", "temperature-converter", "--image", "gcr.io/sit707-25t1-gurung-a3961db/temperature-converter", "--region", "us-central1", "--platform", "managed", "--allow-unauthenticated"]
+    args: ["run", "deploy", "temperature-converter", "--image", "gcr.io/sit707-25t1-gurung-a3961db/temperature-converter", "--region", "australia-southeast2", "--platform", "managed", "--allow-unauthenticated"]
     
 images: ["gcr.io/sit707-25t1-gurung-a3961db/temperature-converter"]
