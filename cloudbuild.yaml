@@ -1,3 +1,7 @@
+options:
+  logging: CLOUD_LOGGING_ONLY
+  logsBucket: 'gs://your-project-id_cloudbuild/logs'
+
 steps:
   # Build the application and run tests
   - name: maven:3.8.4-jdk-11
