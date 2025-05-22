@@ -1,9 +1,5 @@
-options:
-  logging: CLOUD_LOGGING_ONLY
-  # Remove workerPool specification to use global default
-
 steps:
-  - name: maven:3.8.4-jdk-11
+  - name: 'maven:3.9.6-eclipse-temurin-17'
     entrypoint: mvn
     args: ["clean", "package"]
     
