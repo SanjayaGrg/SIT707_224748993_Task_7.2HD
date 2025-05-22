@@ -47,19 +47,19 @@ public class TemperatureConverterTest {
         assertEquals(-279.67, converter.kelvinToFahrenheit(100), DELTA);
     }
     
-//    // This test will fail initially
-//    @Test
-//    public void testFailingConversion() {
-//        // Intentionally wrong - 0°C is 32°F, not 0°F
-//        assertEquals(0.0, converter.celsiusToFahrenheit(0), DELTA);
-//    }
-    
-    //Test pass
+    // This test will fail initially
     @Test
     public void testFailingConversion() {
-        // Corrected expectation
-        assertEquals(32.0, converter.celsiusToFahrenheit(0), DELTA);
+        // Intentionally wrong - 0°C is 32°F, not 0°F
+        assertEquals(0.0, converter.celsiusToFahrenheit(0), DELTA);
     }
+    
+    //Test pass
+//    @Test
+//    public void testFailingConversion() {
+//        // Corrected expectation
+//        assertEquals(32.0, converter.celsiusToFahrenheit(0), DELTA);
+//    }
     
     @Test
     public void testExtremeTemperatures() {
